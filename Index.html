@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arknights Endfield Guides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0c0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .header {
+            background: #080a0c;
+            border-bottom: 1px solid #2a2f36;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #ffb347;
+            font-size: 2rem;
+        }
+        .header p {
+            color: #4a7a9c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .classes {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .class-btn {
+            background: #14181e;
+            border: 1px solid #2a2f36;
+            color: #ffb347;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .class-btn:hover {
+            background: #2a2f36;
+        }
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .guide-card {
+            background: #14181e;
+            border: 1px solid #2a2f36;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .guide-card h3 {
+            color: #ffb347;
+            margin-bottom: 10px;
+        }
+        .class-badge {
+            display: inline-block;
+            background: #2a2f36;
+            color: #4a7a9c;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 10px 0;
+        }
+        .guide-link {
+            display: inline-block;
+            color: #4a7a9c;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .guide-link:hover {
+            color: #ffb347;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #2a2f36;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ARKNIGHTS ENDFIELD</h1>
+        <p>база гайдов и переводов</p>
+    </div>
+
+    <div class="container">
+        <div class="classes">
+            <button class="class-btn">Все</button>
+            <button class="class-btn">Vanguard</button>
+            <button class="class-btn">Guard</button>
+            <button class="class-btn">Sniper</button>
+            <button class="class-btn">Caster</button>
+            <button class="class-btn">Defender</button>
+            <button class="class-btn">Medic</button>
+            <button class="class-btn">Supporter</button>
+        </div>
+
+        <div class="guides-grid" id="guides">
+            <!-- ГАЙДЫ БУДУТ ДОБАВЛЯТЬСЯ СЮДА -->
+            <div class="guide-card">
+                <h3>Pogranichnik</h3>
+                <span class="class-badge">Vanguard ★6</span>
+                <p>Полный разбор навыков, материалов и потенциалов. Перевод с Icy Veins.</p>
+                <a href="#" class="guide-link">Читать гайд →</a>
+            </div>
+            
+            <div class="guide-card">
+                <h3>Exusiai</h3>
+                <span class="class-badge">Sniper ★6</span>
+                <p>Гайд по снайперу: билды, ротация навыков, модули.</p>
+                <a href="#" class="guide-link">Читать гайд →</a>
+            </div>
+
+            <div class="guide-card">
+                <h3>Amiya</h3>
+                <span class="class-badge">Caster ★5</span>
+                <p>Все формы, прокачка, синергия с отрядом.</p>
+                <a href="#" class="guide-link">Читать гайд →</a>
+            </div>
+        </div>
+
+        <!-- ИНСТРУКЦИЯ ПО ДОБАВЛЕНИЮ (можно удалить потом) -->
+        <div style="background: #000; padding: 20px; border-radius: 8px; margin: 40px 0;">
+            <h3 style="color:#ffb347;">➕ КАК ДОБАВИТЬ НОВЫЙ ГАЙД</h3>
+            <ol style="margin-left: 20px;">
+                <li>Найдите в коде блок "ГАЙДЫ БУДУТ ДОБАВЛЯТЬСЯ СЮДА"</li>
+                <li>Скопируйте один блок guide-card</li>
+                <li>Вставьте ниже и поменяйте текст</li>
+            </ol>
+            <pre style="background:#1e1e1e; padding:15px; border-radius:8px; margin-top:15px;">
+&lt;div class="guide-card"&gt;
+    &lt;h3&gt;Имя оперативника&lt;/h3&gt;
+    &lt;span class="class-badge"&gt;Класс ★6&lt;/span&gt;
+    &lt;p&gt;Описание гайда.&lt;/p&gt;
+    &lt;a href="ссылка-на-гайд.html" class="guide-link"&gt;Читать гайд →&lt;/a&gt;
+&lt;/div&gt;
+            </pre>
+        </div>
+    </div>
+
+    <div class="footer">
+        Авторские переводы гайдов по Arknights Endfield
+    </div>
+</body>
+</html>
